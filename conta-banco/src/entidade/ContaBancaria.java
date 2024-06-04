@@ -7,7 +7,12 @@ public class ContaBancaria {
     private String nomeCliente;
     private double saldo;
 
-    public ContaBancaria() {}
+    public ContaBancaria(int numero, String agencia, String nomeCliente, double saldo) {
+		setNumero(numero);
+		setAgencia(agencia);
+		setNomeCliente(nomeCliente);
+		setSaldo(saldo);
+	}
 
     public int getNumero() {
 		return numero;
